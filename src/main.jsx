@@ -7,7 +7,7 @@ import About from "./Pages/About.jsx";
 import Sales from "./Pages/Sales.jsx";
 import Menyu from "./Pages/Menyu.jsx";
 import WorkPlace from "./Pages/WorkPlace.jsx";
-
+import Branches from "./Pages/Branches.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +30,10 @@ const router = createBrowserRouter([
         path: "WorkPlace",
         element: <WorkPlace />,
       },
+      {
+        path: "Branches",
+        element: <Branches />
+      }
     ],
   },
 ]);
