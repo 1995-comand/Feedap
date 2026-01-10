@@ -1,10 +1,32 @@
 import React from "react";
 
 const SwitchControler = () => {
+  const [theme, setTheme] = React.useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
+
+  React.useEffect(() => {
+    localStorage.setItem("theme", theme);
+    document.querySelector("html").setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const handleToggle = (e) => {
+    if (e.target.checked) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+
   return (
     <div>
       <label className="swap swap-rotate">
-        <input type="checkbox" className="theme-controller" value="synthwave" />
+        <input
+          type="checkbox"
+          onChange={handleToggle}
+          checked={theme === "dark"}
+          className="theme-controller"
+        />
         <svg
           className="swap-off h-10 w-10 fill-current"
           xmlns="http://www.w3.org/2000/svg"
