@@ -64,9 +64,22 @@ const Lupa = () => {
                         <ul>
                             {filteredProducts.map((product) => (
                                 <div>
-                                    <div>
-                                        
-                                    </div>
+                                    <ul className="menu bg-base-200 rounded-box w-56 p-4">
+                                        <li className="menu-title">Menyu</li>
+                                        <li className="hover:bg-error"><a>Kombolar</a></li>
+                                        <li className="hover:bg-error"><a>Lavash</a></li>
+                                        <li className="hover:bg-error"><a>Burger</a></li>
+                                        <li className="hover:bg-error"><a>Hot-Dog</a></li>
+                                        <li className="hover:bg-error"><a>Sendvich</a></li>
+                                        <li className="hover:bg-error"><a>Donar</a></li>
+                                        <li className="hover:bg-error"><a>Salatlar</a></li>
+                                        <li className="hover:bg-error"><a>Sous</a></li>
+                                        <li className="hover:bg-error"><a>Mafin</a></li>
+                                        <li className="hover:bg-error"><a>Kofe</a></li>
+                                        <li className="hover:bg-error"><a>Garnirlar</a></li>
+                                        <li className="hover:bg-error"><a>Ichimliklar</a></li>
+                                        <li className="hover:bg-error"><a>Qo'shimchalar</a></li>
+                                    </ul>
                                 </div>
                             ))}
                         </ul>
