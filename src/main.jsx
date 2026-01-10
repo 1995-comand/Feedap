@@ -10,6 +10,7 @@ import Menyu from "./Pages/Menyu.jsx";
 import WorkPlace from "./Pages/WorkPlace.jsx";
 import Callcenter from "./Pages/Callcenter.jsx";
 import ProductDetail from "./Pages/ProductDetail.jsx";
+import Branches from "./Pages/Branches.jsx";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "product/:id",
         element: <ProductDetail />,
+      },
+      {
+        path: "Branch",
+        element: <Branches />,
       },
     ],
   },

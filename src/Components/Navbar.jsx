@@ -189,7 +189,7 @@ const Navbar = () => {
               <Link to="/Sales">Sales</Link>
             </li>
             <li>
-              <Link to="/WorkPlace">WorkPlace</Link>
+              <Link to="/Branch">WorkPlace</Link>
             </li>
             <li>
               <Link to="/Callcenter">Callcenter</Link>
