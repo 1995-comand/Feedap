@@ -7,6 +7,7 @@ import About from "./Pages/About.jsx";
 import Sales from "./Pages/Sales.jsx";
 import Menyu from "./Pages/Menyu.jsx";
 import WorkPlace from "./Pages/WorkPlace.jsx";
+import Callcenter from "./Pages/Callcenter.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "WorkPlace",
         element: <WorkPlace />,
+      },
+      {
+        path: "Callcenter",
+        element: <Callcenter />,
       },
     ],
   },
