@@ -18,7 +18,7 @@ const Navbar = () => {
                 src="https://static.tildacdn.com/tild3433-3335-4663-b633-393138303263/feed_up.png"
                 alt=""
               />
-            </Link>
+            </Link>c
           </figure>
           <ul className="flex items-center justify-between gap-10">
             <li>
