@@ -21,7 +21,7 @@ const Navbar = () => {
 
   const API = axios.create({
     baseURL: "https://feedup-o1vg.onrender.com",
-    headers: { "Content-Type": "application/json" }
+    headers: { "Content-Type": "application/json" },
   });
 
   // Check if user is logged in on mount
@@ -122,7 +122,7 @@ const Navbar = () => {
       });
 
       setMessage(data.message);
-      
+
       if (data.token) {
         localStorage.setItem("token", data.token);
         API.defaults.headers.common["Authorization"] = `Bearer ${data.token}`;
@@ -203,7 +203,9 @@ const Navbar = () => {
           {isLoggedIn ? (
             <div
               className="cursor-pointer"
-              onClick={() => document.getElementById("register_modal").showModal()}
+              onClick={() =>
+                document.getElementById("register_modal").showModal()
+              }
             >
               <div className="avatar placeholder">
                 <div className="bg-neutral text-neutral-content rounded-full w-10">
@@ -212,7 +214,11 @@ const Navbar = () => {
               </div>
             </div>
           ) : (
-            <button onClick={() => document.getElementById("register_modal").showModal()}>
+            <button
+              onClick={() =>
+                document.getElementById("register_modal").showModal()
+              }
+            >
               <CiUser size={"20px"} />
             </button>
           )}
@@ -232,7 +238,9 @@ const Navbar = () => {
               </button>
 
               <h3 className="font-bold text-lg mb-4">
-                {isLoggedIn ? "👤 Profil" : "📞 Telefon orqali ro'yxatdan o'tish"}
+                {isLoggedIn
+                  ? "👤 Profil"
+                  : "📞 Telefon orqali ro'yxatdan o'tish"}
               </h3>
 
               {isLoggedIn ? (
@@ -240,7 +248,9 @@ const Navbar = () => {
                   <div className="flex flex-col items-center gap-4 py-6">
                     <div className="avatar placeholder">
                       <div className="bg-neutral text-neutral-content rounded-full w-24">
-                        <span className="text-4xl font-bold">{userInitials}</span>
+                        <span className="text-4xl font-bold">
+                          {userInitials}
+                        </span>
                       </div>
                     </div>
                     <div className="text-center">
@@ -254,10 +264,19 @@ const Navbar = () => {
                   <div className="divider"></div>
 
                   <div className="space-y-2">
-                    <button className="btn btn-outline w-full">📦 Buyurtmalarim</button>
-                    <button className="btn btn-outline w-full">❤️ Sevimlilar</button>
-                    <button className="btn btn-outline w-full">⚙️ Sozlamalar</button>
-                    <button className="btn btn-error w-full" onClick={handleLogout}>
+                    <button className="btn btn-outline w-full">
+                      📦 Buyurtmalarim
+                    </button>
+                    <button className="btn btn-outline w-full">
+                      ❤️ Sevimlilar
+                    </button>
+                    <button className="btn btn-outline w-full">
+                      ⚙️ Sozlamalar
+                    </button>
+                    <button
+                      className="btn btn-error w-full"
+                      onClick={handleLogout}
+                    >
                       🚪 Chiqish
                     </button>
                   </div>
@@ -291,7 +310,8 @@ const Navbar = () => {
                   {step === 2 && (
                     <div className="space-y-4">
                       <p className="text-sm text-gray-500">
-                        {phone} raqamiga telegram bot orqali tasdiqlash kodi yuborildi
+                        {phone} raqamiga telegram bot orqali tasdiqlash kodi
+                        yuborildi
                       </p>
                       <input
                         type="text"
@@ -312,7 +332,10 @@ const Navbar = () => {
                           "Kodni tasdiqlash"
                         )}
                       </button>
-                      <button className="btn btn-ghost w-full" onClick={() => setStep(1)}>
+                      <button
+                        className="btn btn-ghost w-full"
+                        onClick={() => setStep(1)}
+                      >
                         Orqaga
                       </button>
                     </div>
@@ -320,7 +343,9 @@ const Navbar = () => {
 
                   {step === 3 && (
                     <div className="space-y-4">
-                      <p className="text-sm text-gray-500">Ma'lumotlaringizni kiriting</p>
+                      <p className="text-sm text-gray-500">
+                        Ma'lumotlaringizni kiriting
+                      </p>
                       <input
                         type="text"
                         className="input input-bordered w-full"
@@ -334,7 +359,9 @@ const Navbar = () => {
                         placeholder="Familiya"
                         value={surname}
                         onChange={(e) => setSurname(e.target.value)}
-                        onKeyPress={(e) => handleKeyPress(e, handleCompleteProfile)}
+                        onKeyPress={(e) =>
+                          handleKeyPress(e, handleCompleteProfile)
+                        }
                       />
                       <button
                         className="btn btn-success w-full"
@@ -347,7 +374,10 @@ const Navbar = () => {
                           "Saqlash"
                         )}
                       </button>
-                      <button className="btn btn-ghost w-full" onClick={() => setStep(2)}>
+                      <button
+                        className="btn btn-ghost w-full"
+                        onClick={() => setStep(2)}
+                      >
                         Orqaga
                       </button>
                     </div>
