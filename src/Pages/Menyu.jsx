@@ -5,7 +5,7 @@ const Menyu = () => {
   const [products, setProducts] = useState([]);
 
    useEffect(() => {
-    fetch("https://dummyjson.com/products")
+    fetch("https://feedup-o1vg.onrender.com/product/all")
       .then(res => res.json())
       .then(data => setProducts(data.products));
   }, []);
@@ -43,7 +43,7 @@ const Menyu = () => {
             <div className="ml-50 "> <FaRegHeart  className="color-red "/></div>
             
             <img
-              src={product.thumbnail}
+              src={product.pictures[0]}
               alt={product.title}
               className="w-full h-44 object-contain"
             />
