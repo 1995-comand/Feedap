@@ -5,14 +5,14 @@ const Callcenter = () => {
 
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
       <div className="max-w-6xl w-full bg-white rounded-2xl shadow-lg grid grid-cols-1 md:grid-cols-2 overflow-hidden">
-        {/* Left side */}
+    
         <div className="p-10">
-          <h1 className="text-4xl font-bold mb-6">Biz bilan bog‘laning</h1>
+          <h1 className="text-4xl font-bold mb-6">Biz bilan bog'laning</h1>
           <p className="text-gray-600 mb-4">
-            Savollaringiz, takliflaringiz yoki murojaatlaringiz bo‘lsa, biz bilan bog‘laning.
+            Savollaringiz, takliflaringiz yoki murojaatlaringiz bo'lsa, biz bilan bog'laning.
           </p>
           <p className="text-gray-600 mb-8">
-            Quyidagi formani to‘ldiring va biz imkon qadar tez siz bilan bog‘lanamiz.
+            Quyidagi formani to'ldiring va biz imkon qadar tez siz bilan bog'lanamiz.
           </p>
 
           <div className="space-y-3 text-gray-700">
@@ -24,7 +24,7 @@ const Callcenter = () => {
           </div>
         </div>
 
-        {/* Right side */}
+ 
         <div className="p-10 bg-gray-50">
           <form className="space-y-5">
             <input
@@ -53,7 +53,7 @@ const Callcenter = () => {
               type="submit"
               className="w-full bg-red-600 text-white py-4 rounded-xl text-lg font-semibold hover:bg-red-700 transition"
             >
-              Jo‘natish
+              Jo'natish
             </button>
           </form>
         </div>
