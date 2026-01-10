@@ -8,6 +8,7 @@ import About from "./Pages/About.jsx";
 import Sales from "./Pages/Sales.jsx";
 import Menyu from "./Pages/Menyu.jsx";
 import WorkPlace from "./Pages/WorkPlace.jsx";
+import Callcenter from "./Pages/Callcenter.jsx";
 import ProductDetail from "./Pages/ProductDetail.jsx";
 
 const router = createBrowserRouter([
@@ -16,32 +17,37 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
+        index: true,
+        element: <Home />,
+      },
+      {
         path: "about",
         element: <About />,
       },
       {
-        path: "Menyu",
+        path: "menyu",
         element: <Menyu />,
       },
       {
-        path: "Sales",
+        path: "sales",
         element: <Sales />,
       },
       {
-        path: "WorkPlace",
+        path: "workplace",
         element: <WorkPlace />,
       },
       {
-        // Pathless layout route for Home and Product Details (Modal)
-        element: <Home />,
-        children: [
-          { index: true, element: null }, // Matches / (Home displays grid + null outlet)
-          { path: "product/:id", element: <ProductDetail /> } // Matches /product/:id (Home displays grid + Modal)
-        ]
-      }
+        path: "callcenter",
+        element: <Callcenter />,
+      },
+      {
+        path: "product/:id",
+        element: <ProductDetail />,
+      },
     ],
   },
 ]);
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />

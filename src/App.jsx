@@ -5,8 +5,9 @@ import Navbar from "./Components/Navbar";
 const App = () => {
   return (
     <div className="container mx-auto w-[85%]">
-      <Navbar />
+     <Navbar />
       <Outlet />
+      
     </div>
   );
 };

@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Navbar from "../Components/Navbar";
+import Menyu from "./Menyu";
 import { Outlet } from "react-router-dom";
 import Card from "../Components/Card";
 

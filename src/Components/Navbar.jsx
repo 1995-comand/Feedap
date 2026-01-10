@@ -191,6 +191,9 @@ const Navbar = () => {
             <li>
               <Link to="/WorkPlace">WorkPlace</Link>
             </li>
+            <li>
+              <Link to="/Callcenter">Callcenter</Link>
+            </li>
           </ul>
         </div>
         <div className="flex items-center gap-5">
