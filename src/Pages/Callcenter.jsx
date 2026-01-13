@@ -55,10 +55,10 @@ ${message}
 
           <div className="space-y-3 text-gray-700">
             <p>📞 +998 71 200 22 11</p>
-            <p>✉️ feedup.uz@yandex.ru</p>
-            <p>📘 Facebook</p>
-            <p>📷 Instagram</p>
-            <p>✈️ Telegram</p>
+            <p><a href="mailto:feedup.uz@yandex.ru ">✉️ feedup.uz@yandex.ru</a></p>
+            <p><a href="https://www.facebook.com/share/1AXSvo8ddY/?mibextid=wwXIfr">📘 Facebook</a></p>
+            <p><a href="https://www.instagram.com/feedupuz?igsh=MW91dm1hNWl6em9mYg==">📷 Instagram</a></p>
+            <p><a href="https://t.me/feedupuz_bot">✈️ Telegram </a></p>
           </div>
         </div>
 
